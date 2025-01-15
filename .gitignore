@@ -1,0 +1,6 @@
+data/
+output_image/
+
+*.tif
+*.png
+*.jpeg
