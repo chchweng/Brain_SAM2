@@ -1,5 +1,5 @@
-data/
-output_image/
+# data/
+# output_image/
 
 *.tif
 *.png

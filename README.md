@@ -1,7 +1,7 @@
 # Brain neuron semi-automatic Segmentation by SAM2
 
 This repository is for automatic segmentation on ExT Brain neuron segmentation
-Our first attempt is applying [Segment Anything 2] (https://ai.meta.com/sam2/) ([github] (https://github.com/facebookresearch/sam2.git))
+Our first attempt is applying [Segment Anything 2](https://ai.meta.com/sam2/) ([github](https://github.com/facebookresearch/sam2.git))
 
 ---
 
