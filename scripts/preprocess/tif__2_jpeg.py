@@ -24,8 +24,9 @@ def convert_tif_to_jpeg(input_dir, output_dir):
         image = tiff.imread(input_path)
 
         # Convert 16-bit to 8-bit by scaling
-        image_8bit = ((image - image.min()) / (image.max() - image.min()) * 255).astype(np.uint8)
-        # image_8bit = image.astype(np.uint8)
+        # image_8bit = ((image - image.min()) / (image.max() - image.min()) * 255).astype(np.uint8)
+        image_8bit = image.astype(np.uint8)
+        
         # Convert to a PIL image and save as .jpeg
         image_pil = Image.fromarray(image_8bit)
         image_pil.save(output_path, format='JPEG')
@@ -33,8 +34,8 @@ def convert_tif_to_jpeg(input_dir, output_dir):
 #%%
 if __name__ == "__main__":
     # Set the input and output directories
-    input_dir = "/homes/chunchieh/brain/data/20250110/X10xX10h_TH_L3p3_b2z2_p20xw_F006/Mask_labels/seg002"
-    output_dir = "/homes/chunchieh/brain/data_jpeg/20250110/X10xX10h_TH_L3p3_b2z2_p20xw_F006/Mask_labels/seg002"
+    input_dir = "/homes/chunchieh/brain/data/20250110/X10xX10h_TH_L3p3_b2z2_p20xw_F017/raw_data"
+    output_dir = "/homes/chunchieh/brain/data_jpeg/20250110/X10xX10h_TH_L3p3_b2z2_p20xw_F017/raw_data"
 
     # Convert .tif slices to .jpeg
     convert_tif_to_jpeg(input_dir, output_dir)
