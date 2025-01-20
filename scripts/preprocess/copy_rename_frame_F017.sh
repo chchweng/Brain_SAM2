@@ -4,7 +4,7 @@
 
 # Source directory and target directory
 src_dir="/homes/chunchieh/brain/data_jpeg/20250110/X10xX10h_TH_L3p3_b2z2_p20xw_F017/raw_data"
-target_dir="/homes/chunchieh/brain/data_jpeg/20250110/X10xX10h_TH_L3p3_b2z2_p20xw_F017/raw_data_1000_1500_frame"
+target_dir="/homes/chunchieh/brain/data_jpeg/20250110/X10xX10h_TH_L3p3_b2z2_p20xw_F017/raw_data_3500_4000_frame"
 
 # Create target directory if not exists
 mkdir -p "$target_dir"
@@ -13,7 +13,7 @@ mkdir -p "$target_dir"
 # counter=0
 
 # Loop through the range of files
-for i in $(seq 1000 1500); do
+for i in $(seq 3500 4000); do
 
   # Format source file number with leading zeros (e.g., 0649, 0999)
   printf -v src_number "%04d" "$i"

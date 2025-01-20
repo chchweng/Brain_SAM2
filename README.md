@@ -16,3 +16,9 @@ run:
 /homes/chunchieh/brain/scripts/preprocess/copy_rename_frame_F006.sh
 ```
 This command will creata a folder `/homes/chunchieh/brain/data_jpeg/20250110/X10xX10h_TH_L3p3_b2z2_p20xw_F006/raw_data_frame`
+
+
+###
+Todo:
+1. choose proper mask prompt slices, concate predicted result to a complete patch prediction
+2. Save full segmentation prediction to tif files
